@@ -15,7 +15,7 @@ public class TwitterController {
     public String getTweetsDetails(@RequestBody String inputDetails){
     	String twitterData = null;
     	//TODO
-        twitterData = getTwitterData();
+        //twitterData = getTwitterData();
     	return twitterData;
     }
 }
