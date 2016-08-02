@@ -62,7 +62,7 @@
 
       function plotTwitterWordCloud(hashTag){
         var postData = "#"+hashTag;
-        $http.post(../getTweetsDetails, postData, config)
+        $http.post("../getTweetsDetails", postData)
               .success(function (data, status, headers, config) {
                 $scope.hashTagGiven = hashTag;
                 var frequency_list = data;
