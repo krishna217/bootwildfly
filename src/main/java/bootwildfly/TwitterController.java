@@ -74,7 +74,7 @@ public class TwitterController {
 
 		          String user = t.getUser().getScreenName();
 		          outpt.put("text",t.getText());
-		          outpt.put("size", Math.random());
+		          outpt.put("size", (int)(Math.random()*100));
 		          outputList.put(outpt);
 
 		          } 
