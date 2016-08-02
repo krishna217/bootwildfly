@@ -73,7 +73,7 @@ public class TwitterController {
 		         // GeoLocation loc = t.getGeoLocation();
 
 		          String user = t.getUser().getScreenName();
-		          outpt.put("text",t.getText());
+		          outpt.put("text",user);
 		          outpt.put("size", (int)(Math.random()*100));
 		          outputList.put(outpt);
 
