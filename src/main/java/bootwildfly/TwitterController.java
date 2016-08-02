@@ -1,9 +1,10 @@
-package com.camp.twitter;
+package bootwildfly;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
 
 @RestController
 public class TwitterController {
@@ -13,7 +14,8 @@ public class TwitterController {
     @ResponseBody
     public String getTweetsDetails(@RequestBody String inputDetails){
     	String twitterData = null;
-        //twitterData = getTwitterData();
+    	//TODO
+        twitterData = getTwitterData();
     	return twitterData;
     }
 }
