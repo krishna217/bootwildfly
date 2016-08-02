@@ -25,7 +25,7 @@ public class TwitterController {
 
     @RequestMapping("getTweetsDetails")
     @ResponseBody
-    public String getTweetsDetails(@RequestBody String inputDetails){
+    public String getTweetsDetails(@RequestBody String inputDetails) throws JSONException {
     	String twitterData = null;
     	//TODO
         twitterData = new TwitterController().getTwitterData(inputDetails);
