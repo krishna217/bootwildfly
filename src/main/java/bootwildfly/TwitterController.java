@@ -25,10 +25,15 @@ public class TwitterController {
 
     @RequestMapping("getTweetsDetails")
     @ResponseBody
-    public String getTweetsDetails(@RequestBody String inputDetails) throws JSONException {
+    public String getTweetsDetails(@RequestBody String inputDetails) {
     	String twitterData = null;
-    	//TODO
-        twitterData = new TwitterController().getTwitterData(inputDetails);
+    	try {
+    	    //TODO
+            twitterData = new TwitterController().getTwitterData(inputDetails);
+    	} catch (Exception e) {
+    	    e.printStackTrace();
+    	    //throw e;	
+    	}
     	return twitterData;
     }
     
